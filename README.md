@@ -15,10 +15,10 @@ Prerequisites for running Jenkins instance:
  
 `sudo usermod -aG docker jenkins`
  
-`sudo chmod 666 /var/run/docker.sock`
+`sudo chmod 666 /var/run/docker.sock`   Changing permissions for docker.sock is necessary to run Docker from Jenkins instance.
  
 - docker-compose installed:
- 
+
 `
 curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 `
