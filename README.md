@@ -9,7 +9,9 @@ Prerequisites for running Jenkins instance:
 	    gnupg-agent \
 	    software-properties-common
 `
+
 `sudo usermod -aG docker jenkins`
+
 `sudo chmod 666 /var/run/docker.sock`
 
 --- 
