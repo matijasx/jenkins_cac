@@ -1,0 +1,24 @@
+version: '3.7'
+services:
+  jenkins: 
+    build: 
+      context: .
+    ports: 
+      - 80:8080
+      - 50000:50000
+    volumes:
+    #  - jenkins_home:/var/jenkins_home
+      - ./config/cac/:/var/jenkins_conf:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - CASC_JENKINS_CONFIG=/var/jenkins_conf
+    secrets: 
+      - admin
+      - git_ssh_key
+volumes:
+  jenkins_home:
+secrets:
+  admin:
+    file: ./config/secrets/admin
+  git_ssh_key:
+    file: ./config/secrets/git_ssh_key
