@@ -29,7 +29,9 @@ chmod +x /usr/local/bin/docker-compose
 
 --- 
 This will create Jenkins instance with already preconfigured items automatically set up in config/cac/jenkins.yaml :
-- Admin account (username admin, password pw12) The initial password is specified in config/secrets/admin file, which could further be developed as temporary file fetched from secrets management app programatically.
+- Admin account (username 'admin', password 'pw12') The initial password is specified in config/secrets/admin file, which could further be developed as temporary file fetched from secrets management app programatically.
+
+` config/cac/jenkins.yaml ` sets up following items:
 - Imported git credentials to pull private repositories from my github account.
 - Imported stdPipeline library
 - Installed plugins from config/plugins.txt file to run Multibranch pipeline and Docker containers.
