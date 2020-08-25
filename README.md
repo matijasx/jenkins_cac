@@ -8,9 +8,9 @@ Prerequisites for running Jenkins instance:
 	    curl \
 	    gnupg-agent \
 	    software-properties-common
-	sudo usermod -aG docker jenkins
-	sudo chmod 666 /var/run/docker.sock
 `
+`sudo usermod -aG docker jenkins`
+`sudo chmod 666 /var/run/docker.sock`
 
 --- 
 This will create Jenkins instance with already preconfigured items automatically set up in config/cac/jenkins.yaml :
