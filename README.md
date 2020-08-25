@@ -1,7 +1,9 @@
 Prerequisites for running Jenkins instance:
 - Clean Ubuntu or other Debian distribution
-- Docker installed: `
-	sudo apt-get update
+- Docker installed:
+ `sudo apt-get update `
+
+ `
 	sudo apt-get install \
 	    apt-transport-https \
 	    ca-certificates \
