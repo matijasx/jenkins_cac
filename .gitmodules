@@ -1,0 +1,6 @@
+[submodule "jenkins_lib"]
+	path = jenkins_lib
+	url = git@github.com:matijasx/jenkins_lib.git
+[submodule "config/jenkins_lib"]
+	path = config/jenkins_lib
+	url = git@github.com:matijasx/jenkins_lib.git
